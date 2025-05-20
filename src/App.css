@@ -1,16 +1,76 @@
 @import "tailwindcss";
-@keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animate-fade-in {
-    animation: fade-in 0.6s ease-out;
-  }
-  
+.music-player {
+  width: 350px;
+  background: #1e1e2f;
+  color: #eee;
+  padding: 20px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.play-pause-btn {
+  background-color: #6c63ff;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.play-pause-btn:hover {
+  background-color: #5349d1;
+}
+
+.progress-bar {
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background: #44475a;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #6c63ff;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 6px rgba(108, 99, 255, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+.progress-bar::-webkit-slider-thumb:hover {
+  background-color: #5349d1;
+}
+
+.progress-bar::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #6c63ff;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 6px rgba(108, 99, 255, 0.8);
+  transition: background-color 0.3s ease;
+}
+
+.progress-bar::-moz-range-thumb:hover {
+  background-color: #5349d1;
+}
+
+.time-display {
+  font-size: 14px;
+  color: #bbb;
+}
