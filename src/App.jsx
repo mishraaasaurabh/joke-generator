@@ -39,7 +39,7 @@ function App() {
           style={{ height: "48px" }}
           onClick={generateJoke}
         >
-          🎉 Get a Joke
+          🎉  Get a Joke 
         </button>
       </div>
     </div>
